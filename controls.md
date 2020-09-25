@@ -24,3 +24,13 @@
 - Override methods
 - Select method
 - Click `OK`
+
+## Javadoc
+
+On the command line:
+
+`javadoc -d doc folder\*`
+
+To see private properties use:
+
+`javadoc -private -d doc folder\*`
