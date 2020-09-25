@@ -64,4 +64,26 @@ public class Circle {
         return msg;
     }
 
+    @Override
+    public boolean equals(Object obj) {
+        if (obj == null) {
+            return false;
+        }
+        if (obj == this) {
+            return true;
+        }
+
+        if (this.getClass() != obj.getClass()) {
+            return false;
+        }
+
+        Circle other = (Circle) obj;
+        if (this.x == other.x && this.y == other.y && this.r == other.r) {
+            return true;
+        } else {
+            return false;
+        }
+
+    }
+
 }
