@@ -3,6 +3,12 @@ package staff;
 import java.time.LocalDate;
 import java.util.Objects;
 
+/**
+ * A lecturer
+ * 
+ * @author Elicia Au Duong
+ *
+ */
 public class Lecturer extends StaffMember {
     public String school;
     public char academicStatus;
