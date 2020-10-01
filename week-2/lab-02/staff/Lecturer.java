@@ -77,21 +77,11 @@ public class Lecturer extends StaffMember {
 
     @Override
     public boolean equals(Object obj) {
-        if (obj == null) {
+        if (!super.equals(obj)) {
             return false;
         }
-
-        // if (this == obj) {
-        // return true;
-        // }
-
-        if (this.getClass() != obj.getClass()) {
-            return false;
-        }
-
-        Lecturer other = (Lecturer) obj;
-        if (super.equals(obj) && Objects.equals(this.school, other.school)
-                && this.academicStatus == other.academicStatus) {
+        Lecturer lec = (Lecturer) obj;
+        if (Objects.equals(this.school, lec.school) && this.academicStatus == lec.academicStatus) {
             return true;
         } else {
             return false;
