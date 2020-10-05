@@ -234,7 +234,7 @@ Flow of events for usage success scenario
 
 ## UML Class Diagram
 
-- Assoication
+- Association
 - Aggregations
 - Composition
 - Inheritance (`extends`)
