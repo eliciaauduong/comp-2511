@@ -101,9 +101,9 @@ public class StaffMember {
             return false;
         }
 
-        // if (this == obj) {
-        // return true;
-        // }
+        if (obj == null) {
+            return true;
+        }
 
         if (this.getClass() != obj.getClass()) {
             return false;
